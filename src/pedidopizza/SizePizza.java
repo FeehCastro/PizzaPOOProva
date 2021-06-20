@@ -8,9 +8,9 @@ package pedidopizza;
 
 public class SizePizza {
 
-    int qntSabores;
-    double valorTamanho;
-    double valorCborda;
+    int qtdSabores;
+    double preçoTamanho;
+    double preçoCborda;
     String tamanho;
     int validador = 0;
     EdgeFlavor edgeflavor = new EdgeFlavor();
@@ -19,40 +19,40 @@ public class SizePizza {
 
         switch (op) {
             case 1:
-                qntSabores = 5;
+                qtdSabores = 5;
                 tamanho = "Gigante";
-                valorTamanho = 75;
-                valorCborda = 80;
+                preçoTamanho = 75;
+                preçoCborda = 80;
                 break;
 
             case 2:
-                qntSabores = 4;
+                qtdSabores = 4;
                 tamanho = "Familia";
-                valorTamanho = 66;
-                valorCborda = 69.5;
+                preçoTamanho = 66;
+                preçoCborda = 69.5;
                 break;
 
             case 3:
-                qntSabores = 3;
+                qtdSabores = 3;
                 tamanho = "Media";
-                valorTamanho = 52;
-                valorCborda = 56.5;
+                preçoTamanho = 52;
+                preçoCborda = 56.5;
                 break;
 
             case 4:
-                qntSabores = 3;
+                qtdSabores = 3;
                 tamanho = "Pequena";
-                valorTamanho = 42;
-                valorCborda = 44.5;
+                preçoTamanho = 42;
+                preçoCborda = 44.5;
                 break;
 
             case 5:
-                qntSabores = 2;
+                qtdSabores = 2;
                 tamanho = "Broto";
-                valorTamanho = 28;
+                preçoTamanho = 28;
                 validador = 1;
                 break;
         }
-        return qntSabores;
+        return qtdSabores;
     }
 }

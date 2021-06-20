@@ -32,8 +32,8 @@ public class Drink {
 
         System.out.println("SELECIONE UMA BEBIDA");
         System.out.println("[1] - Coca Cola 2 LT");
-        System.out.println("[2] - Guaraná 2 LT");
-        System.out.println("[3] - Fanta 2 LT");
+        System.out.println("[2] - Cerveja Heineken 330 ML");
+        System.out.println("[3] - Suco Pratz 900 ML");
         System.out.println("[4] - Agua Mineral 600 ML");
         System.out.println("Insira aqui uma bebida: ");
         op = entrada.nextInt();
@@ -45,12 +45,12 @@ public class Drink {
                 break;
 
             case 2:
-                listaBebidas.add("Guaraná 2 LT");
+                listaBebidas.add("Cerveja Heineken 330 ML");
                 valorDrink = valorDrink + 6.5;
                 break;
 
             case 3:
-                listaBebidas.add("Fanta 2LT");
+                listaBebidas.add("Suco Pratz 900 ML");
                 valorDrink = valorDrink + 12.5;
                 break;
 

@@ -30,19 +30,19 @@ public class Order {
         System.out.println("Insira aqui o tamanho da pizza: ");
         sizePizza.selectSize(entrada.nextInt());
 
-        while (x < sizePizza.qntSabores) {
+        while (x < sizePizza.qtdSabores) {
             Scanner entrada2 = new Scanner(System.in);
 
             System.out.println("SELECIONE UM SABOR DE PIZZA");
-            System.out.println("[1] - 4 Queijos");
-            System.out.println("[2] - Marguerita ");
-            System.out.println("[3] - Napolitana ");
+            System.out.println("[1] - 5 Queijos");
+            System.out.println("[2] - Frango Catupiry ");
+            System.out.println("[3] - Cheddar ");
             System.out.println("[4] - Calabresa");
-            System.out.println("[5] - Chocolate branco ");
-            System.out.println("[6] - Brigadeiro ");
-            System.out.println("[7] - Mussarela ");
-            System.out.println("[8] - Frango Catupiry ");
-            System.out.println("[9] - Strogonoff ");
+            System.out.println("[5] - Chocolate  ");
+            System.out.println("[6] - Prestígio ");
+            System.out.println("[7] - Salmão com alcaparras ");
+            System.out.println("[8] - Camarão ");
+            System.out.println("[9] - Abacaxi com Canela ");
             System.out.println("Insira aqui o sabor da pizza: ");
             flavor.selectFlavor(entrada2.nextInt());
             x++;
@@ -60,9 +60,9 @@ public class Order {
 
         double valor;
         if (edgeFlavor.validador == 1) {
-            valor = sizePizza.valorCborda;
+            valor = sizePizza.preçoCborda;
         } else {
-            valor = sizePizza.valorTamanho;
+            valor = sizePizza.preçoTamanho;
         }
 
         while (drink.validador == 1) {
@@ -74,7 +74,7 @@ public class Order {
             drink.validarDrink(entrada4.nextInt());
         }
 
-        valorTotal = valor + flavor.valorSabor + edgeFlavor.valorBorda + drink.valorDrink;
+        valorTotal = valor + flavor.preçoSabor + edgeFlavor.valorBorda + drink.valorDrink;
 
         System.out.println("O tamanho da pizza e: " + sizePizza.tamanho);
         System.out.println("Os sabores solicitados foram: " + flavor.listaSabores);

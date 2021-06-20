@@ -42,8 +42,8 @@ import java.util.Scanner;
         System.out.println("SELECIONE UM SABOR DE BORDA");
         System.out.println("[1] - Cheddar");
         System.out.println("[2] - Catupiry ");
-        System.out.println("[3] - Patê de alho");
-        System.out.println("[4] - Calabresa");
+        System.out.println("[3] - ½ Nutella ½ Doce de Leite");
+        System.out.println("[4] - Nutella");
         System.out.println("Insira aqui a borda da pizza: ");
         op = entrada.nextInt();
 
@@ -57,12 +57,12 @@ import java.util.Scanner;
                 break;
 
             case 3:
-                border = "Patê de alho";
+                border = "½ Nutella ½ Doce de Leite";
                 valorBorda = 3;
                 break;
 
             case 4:
-                border = "Calabresa";
+                border = "Nutella";
                 valorBorda = 2;
                 break;
         }

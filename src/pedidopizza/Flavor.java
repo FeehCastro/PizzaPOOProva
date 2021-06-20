@@ -10,9 +10,9 @@ import java.util.ArrayList;
 
 public class Flavor {
 
-    double valorSabor;
+    double preçoSabor;
     SizePizza size = new SizePizza();
-    ArrayList<String> listaSabores = new ArrayList<String>();
+    ArrayList<String> listaSabores = new ArrayList<>();
 
     Order order = new Order();
 
@@ -20,34 +20,34 @@ public class Flavor {
 
         switch (op) {
             case 1:
-                listaSabores.add("4 Queijos");
+                listaSabores.add("5 Queijos");
                 break;
             case 2:
-                listaSabores.add("Marguerita");
+                listaSabores.add("Frango Catupiry");
                 break;
             case 3:
-                listaSabores.add("Napolitana");
-                valorSabor += 3.50;
+                listaSabores.add("Cheddar");
+                preçoSabor += 3.50;
                 break;
             case 4:
                 listaSabores.add("Calabresa");
                 break;
             case 5:
-                listaSabores.add("Chocolate branco");
+                listaSabores.add("Chocolate");
                 break;
             case 6:
-                listaSabores.add("Brigadeiro");
+                listaSabores.add("Prestígio");
                 break;
             case 7:
-                listaSabores.add("Mussarela");
-                valorSabor += 4;
+                listaSabores.add("Salmão com alcaparras");
+                preçoSabor += 4;
                 break;
             case 8:
-                listaSabores.add("Frango Catupiry ");
-                valorSabor += 4.5;
+                listaSabores.add("Camarão ");
+                preçoSabor += 4.5;
                 break;
             case 9:
-                listaSabores.add("Strogonoff");
+                listaSabores.add("Abacaxi com Canela");
                 break;
         }
 
